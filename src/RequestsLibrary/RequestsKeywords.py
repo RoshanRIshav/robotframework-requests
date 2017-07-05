@@ -700,6 +700,12 @@ class RequestsKeywords(object):
 
         return response
 
+    def verifyResponse(
+        self,
+        toCheck,
+        checkFrom):
+        return (sorted(toCheck.items()) == sorted(checkFrom.items()))) 
+    
     def delete_request(
             self,
             alias,
